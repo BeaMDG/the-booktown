@@ -131,6 +131,19 @@ footer{
     padding: 20px 20px;
 }
 
+ /*pie de página*/
+ footer{
+    background-color: rgba(255, 255, 255, 0.311);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.telefono{
+    justify-content: space-between;
+}
+
  @media (min-width: 700px){
 
     .container{
@@ -170,15 +183,4 @@ footer{
     
  }
 
- /*pie de página*/
-footer{
-    background-color: rgba(255, 255, 255, 0.311);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
 
-.telefono{
-    justify-content: space-between;
-}

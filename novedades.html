@@ -14,41 +14,87 @@
      <section id="barramenu">
         <div class="fondo-menu">
             <img class="logo" src="img/logo.png" alt="logo de la web">
-            <h1>Reseñas</h1>
+            <h1>Novedades</h1>
 
             <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
             <nav class="nav" id="nav">
                 <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-octagon-fill"></i></button>
                 <ul class="nav-list">
-                    <li class="li"><a href="novedades.html" class="a">Novedades</a></li>
-                    <li class="li"><a href="peticiones.html" class="a">Peticiones</a></li>
+                    <li class="li"><a href="reseñas.html" class="a">Reseñas</a></li>
                     <li class="li"><a href="index.html" class="a">Inicio</a></li>
                 </ul>
             </nav>
         </div>
     </section>
+    <div id="carrusel-formulario">
     <!--carrusel-->
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/carrusel1.jpg" style="width:50%">
+            
+            <img src="img/carrusel1.jpg" alt="libro de zevin">
             
      </div>
      
      <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/carrusel2.jpg" style="width:50%">
+            
+            <img src="img/carrusel2.jpg" alt="libro de nita prose">
             
      </div>
      
      <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/carrusel3.jpg" style="width:50%">
+            
+            <img src="img/carrusel3.jpg" alt="libro de taylor jenkins">
             
      </div>
-     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+     <div class="mySlides fade">
+            
+        <img src="img/carrusel4.jpg" alt="libro de sarah j. maas" >
+        
+ </div>
+
+ <div class="mySlides fade">
+            
+    <img src="img/carrusel5.jpg" alt="libro de book lovers">
+    
+</div>
+
+<div class="mySlides fade">
+            
+    <img src="img/carrusel6.jpg" alt="libro de emily st. john">
+    
+</div>
     </div>
+
+    <!--formulario-->
+<form id="myForm">
+    <div class="form">
+        <h1>Formulario de peticiones</h1><br>
+        <p>Sugerencias de libros para reseñar:</p>
+        <div class="grupo">  
+            <label for="">Nombre:</label>
+            <input type="text" name="" id="usuario" required>
+        </div>
+        <div class="grupo">  
+            <label for="">Libro:</label>
+            <input type="text" name="" id="libro" required>
+        </div>
+        <div class="grupo">  
+            <label for="">comentarios:</label>
+            <input type="text" name="" id="mensaje" required>
+        </div>
+
+    <div class="enviar"><button id="open">Enviar</button></div>
+    <div class="modal_container" class="modal_container">
+        <div class="modal">
+            <h1>¡Gracias por tu recomendación!</h1>
+            <button id="close">Cerrar</button>
+        </div>
+
+    </div>
+    </div>
+</form>
+</div>
 </section>
 <!--pie de página-->
 <footer>
@@ -64,4 +110,5 @@
 </body>
 <script src="javamenu.js"></script>
 <script src="carrusel.js"></script>
+<script src="formulario.js"></script>
 </html>
